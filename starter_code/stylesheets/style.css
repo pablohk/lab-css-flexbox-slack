@@ -59,7 +59,7 @@ nav li {
   padding-right: 2%;
 }
 
-/*css to header tag*/
+/*css to header tag---------------------------*/
 
 header {
   /*background-color: red;*/
@@ -102,7 +102,7 @@ header h1 {
   font-size: 3em;
 }
 
-/*css to main tag*/
+/*css to main tag----------------------------------*/
 
 main {
   width: 100%;
@@ -124,15 +124,10 @@ main {
   font-weight: bold;
 }
 
-.main-images-wrap {
+.main-image-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.main-images {
-  width: 60%;
-  margin-left: 20%;
 }
 
 .main-images img {
@@ -163,7 +158,7 @@ main {
   margin-bottom: 0;
 }
 
-/* css for footer tag */
+/* css for footer tag -------------------------------*/
 
 footer {
   width: 100%;
@@ -174,6 +169,7 @@ footer {
   margin-left: 10%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .footer-data li {
@@ -214,29 +210,34 @@ footer {
 
 /* MediaQuery for Medium sreen size */
 
-@media (min-width: 960px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .nav-link {
     display: none;
   }
-
   .fa-bars {
     display: inline-block;
     margin-left: auto;
     padding-right: 5%;
   }
-
   header {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
-
   .header-left {
-    display:inline-block;
+    display: inline-block;
     margin: 0 auto;
   }
-
   .header-right {
     width: 80%;
     margin: 0;
   }
 }
+
+/* MediaQuery for Small sreen size */
+
+@media screen and (max-width: 960px) {
+  .main-image-wrap {
+  }
+  .main-images img{
+    width: 25%;
+  }
